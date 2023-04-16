@@ -1,21 +1,29 @@
-import Head from 'next/head';
-import Link from 'next/link';
+// import {
+//   Route,
+//   RouterProvider,
+//   createBrowserRouter,
+//   createRoutesFromElements,
+// } from 'react-router-dom';
+//
+// import { LoanCompare } from '@features/loan-compare/containers/LoanCompare';
+// import { Roi } from '@features/roi-table/containers/Roi';
+//
+// import { LayoutWithOutlet } from '@/common/components/Layout';
+import { Home } from '@/common/containers/Home';
 
-import styles from '@/styles/Home.module.css';
+// export default function Routes() {
+//   const router = createBrowserRouter(
+//     createRoutesFromElements(
+//       <Route element={<LayoutWithOutlet />}>
+//         <Route index element={<Home />} />
+//         <Route path="loan-compare" element={<LoanCompare />} />
+//         <Route path="admin/login" element={<Roi />} />
+//       </Route>,
+//     ),
+//   );
+//   return <RouterProvider router={router} />;
+// }
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Property ROI calculator</title>
-        <meta name="description" content="Tools for determining ROI" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <Link href="/loan-compare">Compare loan packages</Link>
-        <Link href="/roi">ROI calculator</Link>
-      </main>
-    </>
-  );
+export default function Routes() {
+  return <Home />;
 }
