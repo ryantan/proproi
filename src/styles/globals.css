@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono: 'Open sans', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 238, 238, 238;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -18,7 +21,7 @@
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
+    rgb(238, 238, 238),
     rgba(255, 255, 255, 0)
   );
 
@@ -87,12 +90,14 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /*background: linear-gradient(*/
+  /*    to bottom,*/
+  /*    transparent,*/
+  /*    rgb(var(--background-end-rgb))*/
+  /*  )*/
+  /*  rgb(var(--background-start-rgb));*/
+
+  background: #f5f5f5;
 }
 
 a {
@@ -105,3 +110,16 @@ a {
 /*    color-scheme: dark;*/
 /*  }*/
 /*}*/
+
+
+.logo {
+  float: left;
+  margin: 0 24px 0 0;
+  color: #F9F9F9;
+  font-weight: 700;
+}
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+}

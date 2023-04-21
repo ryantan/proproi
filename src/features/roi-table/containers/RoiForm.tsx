@@ -210,7 +210,7 @@ export const RoiForm = () => {
   };
 
   return (
-    <div>
+    <div className={'site-layout-content'} style={{ background: '#FFF' }}>
       <Form
         form={form}
         initialValues={initialValues}
