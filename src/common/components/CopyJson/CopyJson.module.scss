@@ -1,0 +1,14 @@
+.copyValuesContainer {
+  position: relative;
+
+  :global(.ant-typography) {
+    width: 580px;
+  }
+
+  // Positions the copy button.
+  :global(.ant-typography) > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
