@@ -1,10 +1,12 @@
 import { Layout, Menu, MenuProps } from 'antd';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-import { SafeHydrate } from '@/common/components/SafeHydrate';
+import { GoogleAnalytics, SafeHydrate } from '@common/components';
+
 import '@/styles/globals.css';
 
 const { Header, Content } = Layout;
@@ -25,6 +27,21 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <SafeHydrate>
+      <Head>
+        <title key="title">Property calculators</title>
+        <meta
+          key="description"
+          name="description"
+          content="Tools for property purchase"
+        />
+        <meta
+          key="viewport"
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <GoogleAnalytics />
       <Layout className={'layout'}>
         <Header>
           <div className={'logo'}>

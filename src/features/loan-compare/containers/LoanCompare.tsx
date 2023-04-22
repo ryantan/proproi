@@ -6,10 +6,12 @@ export const LoanCompare = () => {
   return (
     <>
       <Head>
-        <title>Loan comparison | Property ROI calculator</title>
-        <meta name="description" content="Tools for comparing loan packages" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title key="title">Loan comparison | Property ROI calculator</title>
+        <meta
+          key="description"
+          name="description"
+          content="Illustrates mortgage payments over 6 years given 2 loan packages with different spreads."
+        />
       </Head>
       <LoanForm />
     </>
